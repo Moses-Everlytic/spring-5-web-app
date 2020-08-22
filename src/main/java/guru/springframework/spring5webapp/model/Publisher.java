@@ -29,6 +29,13 @@ public class Publisher {
     public Publisher() {
     }
 
+    public Long getId() {
+    	return this.id;
+    }
+    public void setId(Long id) {
+    	this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -79,8 +86,8 @@ public class Publisher {
 
     @Override
     public String toString() {
-        return "Publisher [address=" + address + ", city=" + city + ", name=" + name + ", state=" + state + ", zip="
-                + zip + "]";
+        return "Publisher {address=" + address + ", city=" + city + ", name=" + name + ", state=" + state + ", zip="
+                + zip + "}";
     }
 
     @Override

@@ -8,6 +8,7 @@ import guru.springframework.spring5webapp.repositories.BookRepository;
 
 @Controller
 public class BookController {
+    
     private final BookRepository bookRepository;
 
     public BookController(BookRepository bookRepository) {
@@ -19,7 +20,7 @@ public class BookController {
 
         model.addAttribute("books", bookRepository.findAll());
         
-        return "books";
+        return "books/list";
     }
     
 }
